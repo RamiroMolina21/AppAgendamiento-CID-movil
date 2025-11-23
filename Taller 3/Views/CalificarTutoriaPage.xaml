@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:Taller_3.ViewModels"
+             x:Class="Taller_3.Views.CalificarTutoriaPage"
+             x:DataType="viewmodels:CalificarTutoriaViewModel"
+             Title="Calificar Tutoría"
+             BackgroundColor="#E8F5E9">
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Volver" 
+                     Command="{Binding Source={RelativeSource AncestorType={x:Type NavigationPage}}, Path=BackButtonCommand}"/>
+    </ContentPage.ToolbarItems>
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+            <!-- Información de la tutoría -->
+            <Border StrokeThickness="1" 
+                    Stroke="#E0E0E0" 
+                    BackgroundColor="White" 
+                    Padding="20" 
+                    StrokeShape="RoundRectangle 5,5,5,5">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="{Binding Tutoria.Tema}" 
+                           FontSize="18" 
+                           FontAttributes="Bold" 
+                           TextColor="#2E7D32"/>
+                    <HorizontalStackLayout Spacing="5">
+                        <Label Text="{Binding Tutoria.Idioma}" 
+                               FontSize="14" 
+                               TextColor="#757575"/>
+                        <Label Text="-" 
+                               FontSize="14" 
+                               TextColor="#757575"/>
+                        <Label Text="{Binding Tutoria.Nivel}" 
+                               FontSize="14" 
+                               TextColor="#757575"/>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Formulario de retroalimentación -->
+            <Border StrokeThickness="1" 
+                    Stroke="#E0E0E0" 
+                    BackgroundColor="White" 
+                    Padding="20" 
+                    StrokeShape="RoundRectangle 5,5,5,5">
+                <VerticalStackLayout Spacing="20">
+                    <Label Text="Calificación (1-5)" 
+                           FontSize="16" 
+                           FontAttributes="Bold" 
+                           TextColor="#424242"/>
+                    
+                    <Slider Minimum="1" 
+                            Maximum="5" 
+                            Value="{Binding Calificacion}"
+                            MinimumTrackColor="#2E7D32"
+                            MaximumTrackColor="#E0E0E0"
+                            ThumbColor="#2E7D32"/>
+                    
+                    <Label Text="{Binding CalificacionTexto}" 
+                           FontSize="14" 
+                           TextColor="#2E7D32" 
+                           HorizontalOptions="Center"/>
+
+                    <Label Text="Comentario" 
+                           FontSize="16" 
+                           FontAttributes="Bold" 
+                           TextColor="#424242"
+                           Margin="0,20,0,0"/>
+                    
+                    <Editor Text="{Binding Comentario}" 
+                            Placeholder="Ingrese sus comentarios sobre la tutoría..." 
+                            HeightRequest="100"
+                            BackgroundColor="#F5F5F5"/>
+
+                    <Button Text="Guardar" 
+                            Command="{Binding GuardarCommand}"
+                            BackgroundColor="#2E7D32" 
+                            TextColor="White" 
+                            FontSize="16" 
+                            FontAttributes="Bold"
+                            CornerRadius="10"
+                            Margin="0,20,0,0"
+                            IsEnabled="{Binding IsLoading, Converter={StaticResource InvertedBoolConverter}}"/>
+                </VerticalStackLayout>
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
+

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:Taller_3.ViewModels"
+             xmlns:models="clr-namespace:Taller_3.Models"
+             x:Class="Taller_3.Views.AgregarEstudiantesPage"
+             x:DataType="viewmodels:AgregarEstudiantesViewModel"
+             Title="Agregar Estudiantes"
+             BackgroundColor="#E8F5E9">
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Volver" 
+                     Command="{Binding Source={RelativeSource AncestorType={x:Type NavigationPage}}, Path=BackButtonCommand}"/>
+    </ContentPage.ToolbarItems>
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+            <Label Text="Seleccione los estudiantes a agregar" 
+                   FontSize="18" 
+                   FontAttributes="Bold" 
+                   TextColor="#424242"/>
+
+            <CollectionView ItemsSource="{Binding EstudiantesDisponibles}" 
+                            EmptyView="No hay estudiantes disponibles.">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="viewmodels:EstudianteSeleccionable">
+                        <Border StrokeThickness="1" 
+                                Stroke="#E0E0E0" 
+                                BackgroundColor="White" 
+                                Padding="15" 
+                                Margin="0,0,0,10"
+                                StrokeShape="RoundRectangle 5,5,5,5">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                
+                                <VerticalStackLayout Grid.Column="0">
+                                    <Label Text="{Binding Estudiante.Nombres}" 
+                                           FontSize="16" 
+                                           FontAttributes="Bold" 
+                                           TextColor="#424242"/>
+                                    <Label Text="{Binding Estudiante.Apellidos}" 
+                                           FontSize="14" 
+                                           TextColor="#757575"/>
+                                    <Label Text="{Binding Estudiante.Correo}" 
+                                           FontSize="12" 
+                                           TextColor="#9E9E9E"/>
+                                </VerticalStackLayout>
+                                
+                                <Button Grid.Column="1" 
+                                        Text="Agregar"
+                                        Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:AgregarEstudiantesViewModel}}, Path=ToggleEstudianteCommand}"
+                                        CommandParameter="{Binding .}"
+                                        BackgroundColor="#2E7D32"
+                                        TextColor="White"
+                                        CornerRadius="5"
+                                        Padding="10,5"
+                                        VerticalOptions="Center"/>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <Button Text="Guardar" 
+                    Command="{Binding GuardarCommand}"
+                    BackgroundColor="#2E7D32" 
+                    TextColor="White" 
+                    FontSize="16" 
+                    FontAttributes="Bold"
+                    CornerRadius="10"
+                    Margin="0,20,0,0"
+                    IsEnabled="{Binding IsLoading, Converter={StaticResource InvertedBoolConverter}}"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
+

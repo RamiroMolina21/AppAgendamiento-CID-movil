@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:Taller_3.ViewModels"
+             xmlns:models="clr-namespace:Taller_3.Models"
+             x:Class="Taller_3.Views.HorariosDisponiblesPage"
+             x:DataType="viewmodels:HorariosDisponiblesViewModel"
+             BackgroundColor="#E8F5E9">
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="menu.png" 
+                     Command="{Binding LoadDataCommand}"
+                     Order="Primary"/>
+    </ContentPage.ToolbarItems>
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="0">
+            <!-- Banner verde -->
+            <VerticalStackLayout BackgroundColor="#2E7D32" 
+                                 Padding="20" 
+                                 Spacing="5">
+                <Label Text="Horarios Disponibles" 
+                       FontSize="24" 
+                       FontAttributes="Bold" 
+                       TextColor="White"/>
+                <Label Text="Reserva un horario disponible para una nueva tutoría" 
+                       FontSize="14" 
+                       TextColor="White"/>
+            </VerticalStackLayout>
+
+            <!-- Contenido principal -->
+            <VerticalStackLayout Padding="20" Spacing="20">
+                <!-- Sección Horarios Disponibles -->
+                <VerticalStackLayout Spacing="15">
+                    <HorizontalStackLayout Spacing="10">
+                        <Image Source="calendar.png" 
+                               HeightRequest="24" 
+                               WidthRequest="24"/>
+                        <Label Text="Horarios Disponibles" 
+                               FontSize="18" 
+                               FontAttributes="Bold" 
+                               TextColor="Black"/>
+                        <Label Text="{Binding HorariosCount}" 
+                               FontSize="18" 
+                               FontAttributes="Bold" 
+                               TextColor="Red"/>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout Spacing="10">
+                        <Entry Text="{Binding SearchText}" 
+                               Placeholder="Buscar..." 
+                               BackgroundColor="White"
+                               WidthRequest="200"/>
+                        <Label Text="{Binding FechaActual, StringFormat='{0:dd/MM/yyyy}'}" 
+                               FontSize="14" 
+                               TextColor="Black"
+                               VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+
+                    <CollectionView ItemsSource="{Binding Horarios}" 
+                                    EmptyView="No hay horarios disponibles.">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate x:DataType="models:HorarioResponseDto">
+                                <Border StrokeThickness="1" 
+                                        Stroke="#E0E0E0" 
+                                        BackgroundColor="White" 
+                                        Padding="15" 
+                                        Margin="0,0,0,10"
+                                        StrokeShape="RoundRectangle 5,5,5,5">
+                                    <VerticalStackLayout Spacing="10">
+                                        <Label Text="{Binding Titulo}" 
+                                               FontSize="16" 
+                                               FontAttributes="Bold" 
+                                               TextColor="Black"/>
+                                        <Label Text="{Binding FechaInicio, StringFormat='Fecha: {0:dd/MM/yyyy}'}" 
+                                               FontSize="14" 
+                                               TextColor="#757575"/>
+                                        <Label Text="{Binding HoraInicio, StringFormat='Hora: {0:HH:mm}'} - {Binding HoraFin, StringFormat='{0:HH:mm}'}" 
+                                               FontSize="14" 
+                                               TextColor="#757575"/>
+                                        <Label Text="{Binding Espacio}" 
+                                               FontSize="14" 
+                                               TextColor="#757575"/>
+                                        <Button Text="Agendar Tutoría" 
+                                                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:HorariosDisponiblesViewModel}}, Path=AgendarTutoriaCommand}"
+                                                CommandParameter="{Binding .}"
+                                                BackgroundColor="#2E7D32" 
+                                                TextColor="White"
+                                                CornerRadius="5"/>
+                                    </VerticalStackLayout>
+                                </Border>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </VerticalStackLayout>
+
+                <!-- Sección Tutorías Agendadas -->
+                <VerticalStackLayout Spacing="15" Margin="0,20,0,0">
+                    <Label Text="Tutorías Agendadas" 
+                           FontSize="18" 
+                           FontAttributes="Bold" 
+                           TextColor="Black"/>
+
+                    <CollectionView ItemsSource="{Binding TutoriasAgendadas}" 
+                                    EmptyView="No hay tutorías agendadas.">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate x:DataType="models:TutoriaResponseDto">
+                                <Border StrokeThickness="1" 
+                                        Stroke="#E0E0E0" 
+                                        BackgroundColor="White" 
+                                        Padding="15" 
+                                        Margin="0,0,0,10"
+                                        StrokeShape="RoundRectangle 5,5,5,5">
+                                    <VerticalStackLayout Spacing="10">
+                                        <Label Text="{Binding Tema}" 
+                                               FontSize="16" 
+                                               FontAttributes="Bold" 
+                                               TextColor="#2E7D32"/>
+                                        <HorizontalStackLayout Spacing="5">
+                                            <Image Source="book.png" 
+                                                   HeightRequest="16" 
+                                                   WidthRequest="16"/>
+                                            <Label Text="{Binding Idioma}" 
+                                                   FontSize="14" 
+                                                   TextColor="#757575"/>
+                                        </HorizontalStackLayout>
+                                        <HorizontalStackLayout Spacing="5">
+                                            <Image Source="calendar.png" 
+                                                   HeightRequest="16" 
+                                                   WidthRequest="16"/>
+                                            <Label Text="{Binding FechaTutoria, StringFormat='{0:dd/MM/yyyy HH:mm}'}" 
+                                                   FontSize="14" 
+                                                   TextColor="#757575"/>
+                                        </HorizontalStackLayout>
+                                        <HorizontalStackLayout Spacing="10">
+                                            <Button Text="Ver Detalle" 
+                                                    Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:HorariosDisponiblesViewModel}}, Path=VerDetalleTutoriaCommand}"
+                                                    CommandParameter="{Binding .}"
+                                                    BackgroundColor="#2E7D32" 
+                                                    TextColor="White"
+                                                    CornerRadius="5"
+                                                    HorizontalOptions="FillAndExpand"/>
+                                            <Button Text="Finalizar" 
+                                                    Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:HorariosDisponiblesViewModel}}, Path=FinalizarTutoriaCommand}"
+                                                    CommandParameter="{Binding .}"
+                                                    BackgroundColor="#FF9800" 
+                                                    TextColor="White"
+                                                    CornerRadius="5"
+                                                    HorizontalOptions="FillAndExpand"
+                                                    IsVisible="{Binding Estado, Converter={StaticResource IsPendienteConverter}}"/>
+                                        </HorizontalStackLayout>
+                                        <Border BackgroundColor="#FF9800" 
+                                                StrokeThickness="0"
+                                                Padding="10,5"
+                                                StrokeShape="RoundRectangle 5,5,5,5"
+                                                HorizontalOptions="Start"
+                                                Margin="0,5,0,0">
+                                            <Label Text="{Binding Estado}" 
+                                                   TextColor="White"/>
+                                        </Border>
+                                    </VerticalStackLayout>
+                                </Border>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </VerticalStackLayout>
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Taller_3.Views.LoginPage"
+             BackgroundColor="#E8F5E9">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="30" VerticalOptions="Center">
+            
+            <!-- Logo CECAR -->
+            <VerticalStackLayout Spacing="10" HorizontalOptions="Center" Margin="0,40,0,20">
+                <Image Source="cecarlogo.jpg" 
+                       HeightRequest="120" 
+                       WidthRequest="120" 
+                       HorizontalOptions="Center"/>
+                <Label Text="Corporación Universitaria del Caribe" 
+                       FontSize="14" 
+                       TextColor="#757575" 
+                       HorizontalOptions="Center"/>
+            </VerticalStackLayout>
+
+            <!-- Título y subtítulo -->
+            <VerticalStackLayout Spacing="5" Margin="0,20,0,30">
+                <Label Text="Bienvenido" 
+                       FontSize="28" 
+                       FontAttributes="Bold" 
+                       TextColor="#2E7D32" 
+                       HorizontalOptions="Center"/>
+                <Label Text="Agenda tus tutorías de forma rápida y sencilla" 
+                       FontSize="14" 
+                       TextColor="#424242" 
+                       HorizontalOptions="Center"/>
+            </VerticalStackLayout>
+
+            <!-- Formulario de login -->
+            <Border StrokeThickness="0" 
+                    BackgroundColor="White" 
+                    Padding="20" 
+                    Margin="0,0,0,20"
+                    StrokeShape="RoundRectangle 10,10,10,10">
+                <VerticalStackLayout Spacing="20">
+                    <Label Text="Correo institucional" 
+                           FontSize="14" 
+                           TextColor="#424242" 
+                           Margin="0,0,0,5"/>
+                    <Entry Text="{Binding Correo}" 
+                           Placeholder="usuario@uni.edu.co" 
+                           Keyboard="Email" 
+                           TextColor="#424242"/>
+                    
+                    <Label Text="Contraseña" 
+                           FontSize="14" 
+                           TextColor="#424242" 
+                           Margin="0,10,0,5"/>
+                    <Entry Text="{Binding Contrasena}" 
+                           Placeholder="********" 
+                           IsPassword="True" 
+                           TextColor="#424242"/>
+                    
+                    <Button Text="Iniciar Sesión" 
+                            Command="{Binding LoginCommand}"
+                            BackgroundColor="#2E7D32" 
+                            TextColor="White" 
+                            FontSize="16" 
+                            FontAttributes="Bold"
+                            CornerRadius="10"
+                            Margin="0,20,0,0"
+                            IsEnabled="{Binding IsLoading, Converter={StaticResource InvertedBoolConverter}}"/>
+                </VerticalStackLayout>
+            </Border>
+
+            <Label Text="Universidad de Lenguas - Sistema de Tutorías" 
+                   FontSize="12" 
+                   TextColor="#9E9E9E" 
+                   HorizontalOptions="Center"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
+ 

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:Taller_3.ViewModels"
+             xmlns:views="clr-namespace:Taller_3.Views"
+             x:Class="Taller_3.Views.DocenteHomePage"
+             x:DataType="viewmodels:DocenteHomeViewModel"
+             Title="Docente Home">
+    
+    <FlyoutPage.Flyout>
+        <ContentPage Title="Menú" BackgroundColor="#2E7D32">
+            <ScrollView>
+                <VerticalStackLayout Spacing="20" Padding="20">
+                    <!-- Logo y nombre -->
+                    <VerticalStackLayout Spacing="10" Margin="0,40,0,30">
+                        <Image Source="cecarlogo.jpg" 
+                               HeightRequest="80" 
+                               WidthRequest="80" 
+                               HorizontalOptions="Center"/>
+                        <Label Text="{Binding NombreCompleto}" 
+                               FontSize="16" 
+                               TextColor="White" 
+                               HorizontalOptions="Center"/>
+                        <Label Text="{Binding Rol}" 
+                               FontSize="14" 
+                               TextColor="#E0E0E0" 
+                               HorizontalOptions="Center"/>
+                    </VerticalStackLayout>
+
+                    <!-- Opciones de menú -->
+                    <Button Text="Inicio" 
+                            Command="{Binding NavigateToHorariosCommand}"
+                            BackgroundColor="Transparent" 
+                            TextColor="White" 
+                            FontSize="16"
+                            HorizontalOptions="Fill"
+                            Margin="0,10,0,0"/>
+                    
+                    <Button Text="Mis Tutorías" 
+                            Command="{Binding NavigateToMisTutoriasCommand}"
+                            BackgroundColor="Transparent" 
+                            TextColor="White" 
+                            FontSize="16"
+                            HorizontalOptions="Fill"/>
+                    
+                    <Button Text="Tutorías Finalizadas" 
+                            Command="{Binding NavigateToTutoriasFinalizadasCommand}"
+                            BackgroundColor="Transparent" 
+                            TextColor="White" 
+                            FontSize="16"
+                            HorizontalOptions="Fill"/>
+
+                    <!-- Botón cerrar sesión -->
+                    <Button Text="Cerrar Sesión" 
+                            Command="{Binding LogoutCommand}"
+                            BackgroundColor="Transparent" 
+                            TextColor="White" 
+                            FontSize="16"
+                            BorderColor="White"
+                            BorderWidth="1"
+                            CornerRadius="5"
+                            HorizontalOptions="Fill"
+                            Margin="0,40,0,0"/>
+                </VerticalStackLayout>
+            </ScrollView>
+        </ContentPage>
+    </FlyoutPage.Flyout>
+
+    <FlyoutPage.Detail>
+        <NavigationPage x:Name="DetailNavigationPage" />
+    </FlyoutPage.Detail>
+</FlyoutPage>

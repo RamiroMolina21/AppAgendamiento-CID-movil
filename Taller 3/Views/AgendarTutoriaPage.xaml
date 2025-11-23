@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:Taller_3.ViewModels"
+             x:Class="Taller_3.Views.AgendarTutoriaPage"
+             x:DataType="viewmodels:AgendarTutoriaViewModel"
+             Title="Agendar Tutoría"
+             BackgroundColor="#E8F5E9">
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Volver" 
+                     Command="{Binding Source={RelativeSource AncestorType={x:Type NavigationPage}}, Path=BackButtonCommand}"/>
+    </ContentPage.ToolbarItems>
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+            <!-- Banner verde -->
+            <VerticalStackLayout BackgroundColor="#2E7D32" 
+                                 Padding="20" 
+                                 Spacing="5"
+                                 Margin="0,0,0,20">
+                <Label Text="Agendar Tutoría" 
+                       FontSize="24" 
+                       FontAttributes="Bold" 
+                       TextColor="White"/>
+                <Label Text="Reserva un horario disponible para una nueva tutoría" 
+                       FontSize="14" 
+                       TextColor="White"/>
+            </VerticalStackLayout>
+
+            <!-- Formulario -->
+            <Border StrokeThickness="0" 
+                    BackgroundColor="White" 
+                    Padding="20" 
+                    StrokeShape="RoundRectangle 10,10,10,10">
+                <VerticalStackLayout Spacing="20">
+                    <Label Text="Idioma" 
+                           FontSize="14" 
+                           TextColor="#424242" 
+                           FontAttributes="Bold"/>
+                    <Entry Text="{Binding Idioma}" 
+                           Placeholder="Ej: Inglés" 
+                           TextColor="#424242"/>
+                    
+                    <Label Text="Nivel" 
+                           FontSize="14" 
+                           TextColor="#424242" 
+                           FontAttributes="Bold"/>
+                    <Entry Text="{Binding Nivel}" 
+                           Placeholder="Ej: A1" 
+                           TextColor="#424242"/>
+                    
+                    <Label Text="Tema" 
+                           FontSize="14" 
+                           TextColor="#424242" 
+                           FontAttributes="Bold"/>
+                    <Entry Text="{Binding Tema}" 
+                           Placeholder="Ej: Gramática básica" 
+                           TextColor="#424242"/>
+                    
+                    <Label Text="Modalidad" 
+                           FontSize="14" 
+                           TextColor="#424242" 
+                           FontAttributes="Bold"/>
+                    <Picker ItemsSource="{Binding Modalidades}" 
+                            SelectedItem="{Binding Modalidad}">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Presencial</x:String>
+                                <x:String>Virtual</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+
+                    <Button Text="Guardar" 
+                            Command="{Binding GuardarCommand}"
+                            BackgroundColor="#2E7D32" 
+                            TextColor="White" 
+                            FontSize="16" 
+                            FontAttributes="Bold"
+                            CornerRadius="10"
+                            Margin="0,20,0,0"
+                            IsEnabled="{Binding IsLoading, Converter={StaticResource InvertedBoolConverter}}"/>
+                </VerticalStackLayout>
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
