@@ -1058,3 +1058,4 @@ C:\Users\molin\Desktop\Taller 3 MAUI\Taller 3\Taller 3\obj\Debug\net8.0-android\
 C:\Users\molin\Desktop\Taller 3 MAUI\Taller 3\Taller 3\obj\Debug\net8.0-android\resizetizer\sp\drawable-xxhdpi\cecarlogo.jpg
 C:\Users\molin\Desktop\Taller 3 MAUI\Taller 3\Taller 3\obj\Debug\net8.0-android\resizetizer\sp\drawable-xxxhdpi\cecarlogo.jpg
 C:\Users\molin\Desktop\Taller 3 MAUI\Taller 3\Taller 3\obj\Debug\net8.0-android\resizetizer\r\drawable\cecarlogo.jpg
+C:\Users\molin\Desktop\Taller 3 MAUI\Taller 3\Taller 3\obj\Debug\net8.0-android\Taller 3.sourcelink.json

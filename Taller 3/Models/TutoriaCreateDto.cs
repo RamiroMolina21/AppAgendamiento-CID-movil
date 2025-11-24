@@ -10,6 +10,7 @@ namespace Taller_3.Models
         public DateTime FechaTutoria { get; set; }
         public int UsuarioId { get; set; }
         public int HorarioId { get; set; }
+        public int? TutorId { get; set; }
     }
 }
  

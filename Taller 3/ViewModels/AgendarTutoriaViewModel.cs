@@ -15,13 +15,17 @@ namespace Taller_3.ViewModels
         private string _nivel;
         private string _tema;
         private string _modalidad;
+        private UsuarioResponseDto _tutorSeleccionado;
+        private List<UsuarioResponseDto> _tutores;
         private bool _isLoading;
 
         public AgendarTutoriaViewModel(ApiService apiService, AuthService authService)
         {
             _apiService = apiService;
             _authService = authService;
+            Tutores = new List<UsuarioResponseDto>();
             GuardarCommand = new Command(async () => await GuardarTutoria(), () => !IsLoading);
+            LoadTutoresCommand = new Command(async () => await LoadTutores());
         }
 
         public HorarioResponseDto HorarioSeleccionado
@@ -74,6 +78,26 @@ namespace Taller_3.ViewModels
             }
         }
 
+        public UsuarioResponseDto TutorSeleccionado
+        {
+            get => _tutorSeleccionado;
+            set
+            {
+                _tutorSeleccionado = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public List<UsuarioResponseDto> Tutores
+        {
+            get => _tutores;
+            set
+            {
+                _tutores = value;
+                OnPropertyChanged();
+            }
+        }
+
         public bool IsLoading
         {
             get => _isLoading;
@@ -86,8 +110,34 @@ namespace Taller_3.ViewModels
         }
 
         public ICommand GuardarCommand { get; }
+        public ICommand LoadTutoresCommand { get; }
 
         public List<string> Modalidades { get; } = new List<string> { "Presencial", "Virtual" };
+
+        public async Task LoadTutores()
+        {
+            try
+            {
+                IsLoading = true;
+                var tutores = await _apiService.GetUsuariosByRolAsync("Tutor");
+                var docentes = await _apiService.GetUsuariosByRolAsync("Docente");
+                
+                // Combinar tutores y docentes
+                var todosUsuarios = new List<UsuarioResponseDto>();
+                todosUsuarios.AddRange(tutores);
+                todosUsuarios.AddRange(docentes);
+                
+                Tutores = todosUsuarios;
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage.DisplayAlert("Error", $"Error al cargar tutores y docentes: {ex.Message}", "OK");
+            }
+            finally
+            {
+                IsLoading = false;
+            }
+        }
 
         public async Task LoadHorario(int horarioId)
         {
@@ -108,7 +158,8 @@ namespace Taller_3.ViewModels
                 string.IsNullOrWhiteSpace(Nivel) || 
                 string.IsNullOrWhiteSpace(Tema) || 
                 string.IsNullOrWhiteSpace(Modalidad) ||
-                HorarioSeleccionado == null)
+                HorarioSeleccionado == null ||
+                TutorSeleccionado == null)
             {
                 await Application.Current.MainPage.DisplayAlert("Error", "Por favor complete todos los campos", "OK");
                 return;
@@ -126,12 +177,19 @@ namespace Taller_3.ViewModels
                     Estado = "Pendiente",
                     FechaTutoria = HorarioSeleccionado.FechaInicio,
                     UsuarioId = _authService.CurrentUser.IdUsuario,
-                    HorarioId = HorarioSeleccionado.IdHorario
+                    HorarioId = HorarioSeleccionado.IdHorario,
+                    TutorId = TutorSeleccionado.IdUsuario
                 };
 
                 await _apiService.CreateTutoriaAsync(tutoriaDto);
                 await Application.Current.MainPage.DisplayAlert("Éxito", "Tutoría agendada correctamente", "OK");
-                await Shell.Current.GoToAsync("..");
+                
+                // Volver a la página anterior
+                if (Application.Current.MainPage is FlyoutPage flyoutPage && 
+                    flyoutPage.Detail is NavigationPage navPage)
+                {
+                    await navPage.PopAsync();
+                }
             }
             catch (Exception ex)
             {

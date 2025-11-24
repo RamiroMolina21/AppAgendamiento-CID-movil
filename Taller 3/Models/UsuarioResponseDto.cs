@@ -8,5 +8,7 @@ namespace Taller_3.Models
         public string Correo { get; set; }
         public DateTime FechaRegistro { get; set; }
         public string TipoRol { get; set; }
+        public string NombreCompleto => $"{Nombres} {Apellidos}".Trim();
+        public string NombreConRol => $"{NombreCompleto} ({TipoRol})";
     }
 }

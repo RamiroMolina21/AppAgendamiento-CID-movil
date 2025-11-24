@@ -94,20 +94,17 @@ namespace Taller_3.ViewModels
 
         private async Task FinalizarTutoria(TutoriaResponseDto tutoria)
         {
-            var confirm = await Application.Current.MainPage.DisplayAlert("Finalizar Tutoría", 
-                $"¿Está seguro que desea finalizar la tutoría '{tutoria.Tema}'?", "Sí", "No");
-            
-            if (confirm)
+            // Navegar a la página de calificar tutoría
+            if (Application.Current.MainPage is FlyoutPage flyoutPage && 
+                flyoutPage.Detail is NavigationPage navPage)
             {
-                try
+                var viewModel = MauiProgram.Services?.GetService<CalificarTutoriaViewModel>();
+                if (viewModel != null)
                 {
-                    await _apiService.FinalizarTutoriaAsync(tutoria.IdTutoria);
-                    await Application.Current.MainPage.DisplayAlert("Éxito", "Tutoría finalizada correctamente", "OK");
-                    await LoadData();
-                }
-                catch (Exception ex)
-                {
-                    await Application.Current.MainPage.DisplayAlert("Error", $"Error al finalizar tutoría: {ex.Message}", "OK");
+                    var page = new CalificarTutoriaPage(viewModel);
+                    page.TutoriaId = tutoria.IdTutoria.ToString();
+                    await navPage.PushAsync(page);
+                    flyoutPage.IsPresented = false;
                 }
             }
         }

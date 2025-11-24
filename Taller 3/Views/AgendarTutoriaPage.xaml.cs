@@ -16,11 +16,18 @@ namespace Taller_3.Views
         protected override async void OnAppearing()
         {
             base.OnAppearing();
-            if (BindingContext is AgendarTutoriaViewModel vm && !string.IsNullOrEmpty(HorarioId))
+            if (BindingContext is AgendarTutoriaViewModel vm)
             {
-                if (int.TryParse(HorarioId, out int horarioId))
+                // Cargar tutores
+                await vm.LoadTutores();
+                
+                // Cargar horario si está disponible
+                if (!string.IsNullOrEmpty(HorarioId))
                 {
-                    await vm.LoadHorario(horarioId);
+                    if (int.TryParse(HorarioId, out int horarioId))
+                    {
+                        await vm.LoadHorario(horarioId);
+                    }
                 }
             }
         }

@@ -72,6 +72,15 @@
                         </Picker.ItemsSource>
                     </Picker>
 
+                    <Label Text="Tutor/Docente" 
+                           FontSize="14" 
+                           TextColor="#424242" 
+                           FontAttributes="Bold"/>
+                    <Picker ItemsSource="{Binding Tutores}" 
+                            SelectedItem="{Binding TutorSeleccionado}"
+                            ItemDisplayBinding="{Binding NombreConRol}">
+                    </Picker>
+
                     <Button Text="Guardar" 
                             Command="{Binding GuardarCommand}"
                             BackgroundColor="#2E7D32" 
