@@ -176,7 +176,7 @@ namespace Taller_3.ViewModels
                     Modalidad = Modalidad,
                     Estado = "Pendiente",
                     FechaTutoria = HorarioSeleccionado.FechaInicio,
-                    UsuarioId = _authService.CurrentUser.IdUsuario,
+                    UsuarioId = TutorSeleccionado.IdUsuario,
                     HorarioId = HorarioSeleccionado.IdHorario,
                     TutorId = TutorSeleccionado.IdUsuario
                 };
