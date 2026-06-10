@@ -14,7 +14,7 @@ namespace Taller_3.ViewModels
         private string _correo;
         private string _contrasena;
         private bool _isLoading;
-
+        public ICommand LoginCommand { get; }
         public LoginViewModel(AuthService authService)
         {
             _authService = authService;
@@ -52,7 +52,7 @@ namespace Taller_3.ViewModels
             }
         }
 
-        public ICommand LoginCommand { get; }
+        
 
         private async Task LoginAsync()
         {

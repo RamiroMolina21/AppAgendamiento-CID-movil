@@ -13,7 +13,8 @@ namespace Taller_3.ViewModels
     {
         private readonly ApiService _apiService;
         private readonly AuthService _authService;
-        private ObservableCollection<HorarioResponseDto> _horarios;
+        private readonly List<HorarioResponseDto> _horariosOriginales = new();
+        private ObservableCollection<HorarioGrupoItem> _gruposHorarios = new();
         private string _searchText;
         private bool _isLoading;
 
@@ -21,20 +22,22 @@ namespace Taller_3.ViewModels
         {
             _apiService = apiService;
             _authService = authService;
-            _horarios = new ObservableCollection<HorarioResponseDto>();
-            
+
             AgendarTutoriaCommand = new Command<HorarioResponseDto>(async (h) => await AgendarTutoria(h));
-            
+            ToggleExpandCommand = new Command<HorarioGrupoItem>(ToggleExpand);
             LoadDataCommand = new Command(async () => await LoadData());
         }
 
-        public ObservableCollection<HorarioResponseDto> Horarios
+        public ObservableCollection<HorarioGrupoItem> GruposHorarios
         {
-            get => _horarios;
+            get => _gruposHorarios;
             set
             {
-                _horarios = value;
+                _gruposHorarios = value;
                 OnPropertyChanged();
+                OnPropertyChanged(nameof(HorariosCount));
+                OnPropertyChanged(nameof(TotalFechasCount));
+                OnPropertyChanged(nameof(ContadorTexto));
             }
         }
 
@@ -45,7 +48,7 @@ namespace Taller_3.ViewModels
             {
                 _searchText = value;
                 OnPropertyChanged();
-                FilterHorarios();
+                AplicarFiltroYAgrupacion();
             }
         }
 
@@ -59,10 +62,16 @@ namespace Taller_3.ViewModels
             }
         }
 
-        public int HorariosCount => Horarios.Count;
+        public int HorariosCount => GruposHorarios.Count;
+        public int TotalFechasCount => GruposHorarios.Sum(g => g.CantidadOcurrencias);
+        public string ContadorTexto =>
+            TotalFechasCount > HorariosCount
+                ? $"{HorariosCount} ({TotalFechasCount} fechas)"
+                : HorariosCount.ToString();
         public DateTime FechaActual => DateTime.Now;
 
         public ICommand AgendarTutoriaCommand { get; }
+        public ICommand ToggleExpandCommand { get; }
         public ICommand LoadDataCommand { get; }
 
         public async Task LoadData()
@@ -71,16 +80,13 @@ namespace Taller_3.ViewModels
             try
             {
                 var usuarioId = _authService.CurrentUser?.IdUsuario ?? 0;
-                
-                // Cargar horarios disponibles del docente
                 var horarios = await _apiService.GetHorariosByUsuarioAsync(usuarioId);
-                Horarios.Clear();
-                foreach (var horario in horarios.Where(h => h.Estado?.ToLower() == "disponible"))
-                {
-                    Horarios.Add(horario);
-                }
 
-                OnPropertyChanged(nameof(HorariosCount));
+                _horariosOriginales.Clear();
+                _horariosOriginales.AddRange(
+                    horarios.Where(h => h.Estado?.ToLower() == "disponible"));
+
+                AplicarFiltroYAgrupacion();
             }
             catch (Exception ex)
             {
@@ -92,15 +98,73 @@ namespace Taller_3.ViewModels
             }
         }
 
-        private void FilterHorarios()
+        private void AplicarFiltroYAgrupacion()
         {
-            // Implementar filtrado si es necesario
+            IEnumerable<HorarioResponseDto> filtrados = _horariosOriginales;
+
+            if (!string.IsNullOrWhiteSpace(SearchText))
+            {
+                var busqueda = SearchText.Trim().ToLowerInvariant();
+                filtrados = _horariosOriginales.Where(h =>
+                    (h.Titulo?.ToLowerInvariant().Contains(busqueda) ?? false) ||
+                    (h.Espacio?.ToLowerInvariant().Contains(busqueda) ?? false) ||
+                    h.FechaInicio.ToString("dd/MM/yyyy").Contains(busqueda));
+            }
+
+            var grupos = AgruparHorarios(filtrados.ToList());
+
+            GruposHorarios.Clear();
+            foreach (var grupo in grupos)
+            {
+                GruposHorarios.Add(grupo);
+            }
+
+            OnPropertyChanged(nameof(HorariosCount));
+            OnPropertyChanged(nameof(TotalFechasCount));
+            OnPropertyChanged(nameof(ContadorTexto));
+        }
+
+        private static List<HorarioGrupoItem> AgruparHorarios(List<HorarioResponseDto> horarios)
+        {
+            return horarios
+                .GroupBy(h => new
+                {
+                    Titulo = (h.Titulo ?? string.Empty).Trim().ToLowerInvariant(),
+                    HoraInicio = h.HoraInicio.TimeOfDay,
+                    HoraFin = h.HoraFin.TimeOfDay,
+                    Espacio = (h.Espacio ?? string.Empty).Trim().ToLowerInvariant()
+                })
+                .Select(g =>
+                {
+                    var referencia = g.OrderBy(h => h.FechaInicio).First();
+                    return new HorarioGrupoItem(
+                        referencia.Titulo,
+                        referencia.Espacio,
+                        referencia.HoraInicio,
+                        referencia.HoraFin,
+                        g);
+                })
+                .OrderBy(g => g.ProximaFecha)
+                .ThenBy(g => g.HoraInicio)
+                .ToList();
+        }
+
+        private void ToggleExpand(HorarioGrupoItem grupo)
+        {
+            if (grupo == null)
+                return;
+
+            var expandir = !grupo.IsExpanded;
+
+            foreach (var item in GruposHorarios)
+            {
+                item.IsExpanded = item == grupo && expandir;
+            }
         }
 
         private async Task AgendarTutoria(HorarioResponseDto horario)
         {
-            // Navegar usando el NavigationPage actual
-            if (Application.Current.MainPage is FlyoutPage flyoutPage && 
+            if (Application.Current.MainPage is FlyoutPage flyoutPage &&
                 flyoutPage.Detail is NavigationPage navPage)
             {
                 var viewModel = MauiProgram.Services?.GetService<AgendarTutoriaViewModel>();
@@ -113,7 +177,6 @@ namespace Taller_3.ViewModels
                 }
             }
         }
-
 
         public event PropertyChangedEventHandler PropertyChanged;
 

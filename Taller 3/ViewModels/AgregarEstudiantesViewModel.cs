@@ -19,6 +19,30 @@ namespace Taller_3.ViewModels
             {
                 _isSeleccionado = value;
                 OnPropertyChanged();
+                OnPropertyChanged(nameof(TextoAccion));
+                OnPropertyChanged(nameof(IconoSeleccion));
+                OnPropertyChanged(nameof(Iniciales));
+            }
+        }
+
+        public string TextoAccion => IsSeleccionado ? "Quitar" : "Agregar";
+
+        public string IconoSeleccion => IsSeleccionado ? "✓" : "+";
+
+        public string Iniciales
+        {
+            get
+            {
+                if (Estudiante == null)
+                    return "?";
+
+                var nombres = (Estudiante.Nombres ?? string.Empty).Trim();
+                var apellidos = (Estudiante.Apellidos ?? string.Empty).Trim();
+                var inicialNombre = nombres.Length > 0 ? nombres[0].ToString().ToUpperInvariant() : string.Empty;
+                var inicialApellido = apellidos.Length > 0 ? apellidos[0].ToString().ToUpperInvariant() : string.Empty;
+                var iniciales = $"{inicialNombre}{inicialApellido}".Trim();
+
+                return string.IsNullOrEmpty(iniciales) ? "?" : iniciales;
             }
         }
 

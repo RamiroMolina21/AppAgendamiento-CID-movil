@@ -19,7 +19,7 @@ namespace Taller_3.ViewModels
         {
             _apiService = apiService;
             _authService = authService;
-            GuardarCommand = new Command(async () => await GuardarRetroalimentacion(), () => !IsLoading);
+            GuardarCommand = new Command(async () => await GuardarRetroalimentacion(), () => !IsLoading); 
         }
 
         public TutoriaResponseDto Tutoria
@@ -103,7 +103,7 @@ namespace Taller_3.ViewModels
                     Calificacion = Calificacion,
                     TutoriaId = Tutoria.IdTutoria,
                     UsuarioId = _authService.CurrentUser.IdUsuario
-                };
+                };//mapeo del vm a dto
 
                 var success = await _apiService.CreateRetroalimentacionAsync(retroalimentacionDto);
                 
@@ -111,6 +111,10 @@ namespace Taller_3.ViewModels
                 {
                     // Finalizar la tutoría después de crear la retroalimentación
                     await _apiService.FinalizarTutoriaAsync(Tutoria.IdTutoria);
+
+                    // Enviar encuestas de satisfacción a los estudiantes (silencioso si falla)
+                    _ = _apiService.EnviarEncuestasAsync(Tutoria.IdTutoria);
+
                     await Application.Current.MainPage.DisplayAlert("Éxito", "Retroalimentación guardada y tutoría finalizada", "OK");
                     
                     // Volver a la página anterior

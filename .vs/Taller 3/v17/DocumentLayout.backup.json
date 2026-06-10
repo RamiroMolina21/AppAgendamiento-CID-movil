@@ -3,28 +3,104 @@
   "WorkspaceRootPath": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\viewmodels\\calificartutoriaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\viewmodels\\calificartutoriaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\principal.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\principal.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\principal.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\principal.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\taller 3.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\taller 3.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\maestro.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\maestro.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\models\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\models\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\principal.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\principal.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\views\\calificartutoriapage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\views\\calificartutoriapage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\models\\retroalimentacioncreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\models\\retroalimentacioncreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\views\\calificartutoriapage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\views\\calificartutoriapage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\viewmodels\\agendartutoriaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\viewmodels\\agendartutoriaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\views\\agendartutoriapage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\views\\agendartutoriapage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\views\\agendartutoriapage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\views\\agendartutoriapage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\views\\agregarestudiantespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\views\\agregarestudiantespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\views\\agregarestudiantespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\views\\agregarestudiantespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\views\\detalletutoriapage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\views\\detalletutoriapage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\viewmodels\\agregarestudiantesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\viewmodels\\agregarestudiantesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\views\\detalletutoriapage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\views\\detalletutoriapage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\viewmodels\\horariosdisponiblesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\viewmodels\\horariosdisponiblesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\views\\horariosdisponiblespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\views\\horariosdisponiblespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\views\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\views\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\services\\navigationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\services\\navigationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\views\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\views\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\maestro.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,28 +111,64 @@
       "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\detalle.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\views\\detalletutoriafinalizadapage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\views\\detalletutoriafinalizadapage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\models\\horarioresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\models\\horarioresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\models\\usuarioresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\models\\usuarioresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\models\\tutoriaresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\models\\tutoriaresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\models\\tutoriacreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\models\\tutoriacreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\models\\agregarestudiantestutoriadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\models\\agregarestudiantestutoriadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\viewmodels\\mistutoriasviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\viewmodels\\mistutoriasviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\viewmodels\\docentehomeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\viewmodels\\docentehomeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\viewmodels\\detalletutoriaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\viewmodels\\detalletutoriaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\viewmodels\\detalletutoriatutorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\viewmodels\\detalletutoriatutorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\dtosapi\\cambiotutoriadto.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\dtosapi\\cambiotutoriadto.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\principal.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\principal.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\maestro.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\maestro.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\detalle.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\detalle.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\views\\agregarestudiantespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\views\\agregarestudiantespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\views\\agendartutoriapage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\views\\agendartutoriapage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\viewmodels\\agregarestudiantesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\viewmodels\\agregarestudiantesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\viewmodels\\agendartutoriaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\viewmodels\\agendartutoriaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -81,10 +193,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\views\\tutoriasfinalizadastutorpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\views\\tutoriasfinalizadastutorpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|solutionrelative:taller 3\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{121E4065-AA69-4281-8632-1F0F5593C5AB}|Taller 3\\Taller 3.csproj|c:\\users\\molin\\desktop\\taller 3 maui\\taller 3\\taller 3\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -122,7 +230,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -133,8 +241,108 @@
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{f96a0d64-71fd-316f-b663-924c78154f2a}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Taller 3",
+              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Taller 3.csproj",
+              "RelativeDocumentMoniker": "Taller 3\\Taller 3.csproj",
+              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Taller 3.csproj",
+              "RelativeToolTip": "Taller 3\\Taller 3.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-17T03:09:05.664Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CalificarTutoriaPage.xaml",
+              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Views\\CalificarTutoriaPage.xaml",
+              "RelativeDocumentMoniker": "Taller 3\\Views\\CalificarTutoriaPage.xaml",
+              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Views\\CalificarTutoriaPage.xaml",
+              "RelativeToolTip": "Taller 3\\Views\\CalificarTutoriaPage.xaml",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAE0AAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-26T08:02:21.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CalificarTutoriaViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\ViewModels\\CalificarTutoriaViewModel.cs",
+              "RelativeDocumentMoniker": "Taller 3\\ViewModels\\CalificarTutoriaViewModel.cs",
+              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\ViewModels\\CalificarTutoriaViewModel.cs",
+              "RelativeToolTip": "Taller 3\\ViewModels\\CalificarTutoriaViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T07:50:37.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CalificarTutoriaPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Views\\CalificarTutoriaPage.xaml.cs",
+              "RelativeDocumentMoniker": "Taller 3\\Views\\CalificarTutoriaPage.xaml.cs",
+              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Views\\CalificarTutoriaPage.xaml.cs",
+              "RelativeToolTip": "Taller 3\\Views\\CalificarTutoriaPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T07:45:11.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApiService.cs",
+              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Services\\ApiService.cs",
+              "RelativeDocumentMoniker": "Taller 3\\Services\\ApiService.cs",
+              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Services\\ApiService.cs",
+              "RelativeToolTip": "Taller 3\\Services\\ApiService.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAIwBIAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T07:46:03.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "Taller 3\\MauiProgram.cs",
+              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\MauiProgram.cs",
+              "RelativeToolTip": "Taller 3\\MauiProgram.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAowCMAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T23:36:39.356Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AgregarEstudiantesPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Views\\AgregarEstudiantesPage.xaml.cs",
+              "RelativeDocumentMoniker": "Taller 3\\Views\\AgregarEstudiantesPage.xaml.cs",
+              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Views\\AgregarEstudiantesPage.xaml.cs",
+              "RelativeToolTip": "Taller 3\\Views\\AgregarEstudiantesPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T03:13:55.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\App.xaml.cs",
+              "RelativeDocumentMoniker": "Taller 3\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\App.xaml.cs",
+              "RelativeToolTip": "Taller 3\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T23:12:34.373Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Principal.xaml.cs",
               "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Principal.xaml.cs",
               "RelativeDocumentMoniker": "Taller 3\\Principal.xaml.cs",
@@ -146,55 +354,199 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Principal.xaml",
-              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Principal.xaml",
-              "RelativeDocumentMoniker": "Taller 3\\Principal.xaml",
-              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Principal.xaml",
-              "RelativeToolTip": "Taller 3\\Principal.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-24T13:54:05.863Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\MainPage.xaml.cs",
-              "RelativeDocumentMoniker": "Taller 3\\MainPage.xaml.cs",
-              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\MainPage.xaml.cs",
-              "RelativeToolTip": "Taller 3\\MainPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Models\\LoginDto.cs",
+              "RelativeDocumentMoniker": "Taller 3\\Models\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Models\\LoginDto.cs",
+              "RelativeToolTip": "Taller 3\\Models\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T13:53:57.247Z"
+              "WhenOpened": "2025-11-24T21:02:41.976Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Maestro.xaml",
-              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Maestro.xaml",
-              "RelativeDocumentMoniker": "Taller 3\\Maestro.xaml",
-              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Maestro.xaml",
-              "RelativeToolTip": "Taller 3\\Maestro.xaml",
+              "DocumentIndex": 13,
+              "Title": "AgregarEstudiantesPage.xaml",
+              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Views\\AgregarEstudiantesPage.xaml",
+              "RelativeDocumentMoniker": "Taller 3\\Views\\AgregarEstudiantesPage.xaml",
+              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Views\\AgregarEstudiantesPage.xaml",
+              "RelativeToolTip": "Taller 3\\Views\\AgregarEstudiantesPage.xaml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-26T07:41:00.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AgendarTutoriaPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Views\\AgendarTutoriaPage.xaml.cs",
+              "RelativeDocumentMoniker": "Taller 3\\Views\\AgendarTutoriaPage.xaml.cs",
+              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Views\\AgendarTutoriaPage.xaml.cs",
+              "RelativeToolTip": "Taller 3\\Views\\AgendarTutoriaPage.xaml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T03:12:16.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RetroalimentacionCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Models\\RetroalimentacionCreateDto.cs",
+              "RelativeDocumentMoniker": "Taller 3\\Models\\RetroalimentacionCreateDto.cs",
+              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Models\\RetroalimentacionCreateDto.cs",
+              "RelativeToolTip": "Taller 3\\Models\\RetroalimentacionCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T21:03:08.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AgendarTutoriaPage.xaml",
+              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Views\\AgendarTutoriaPage.xaml",
+              "RelativeDocumentMoniker": "Taller 3\\Views\\AgendarTutoriaPage.xaml",
+              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Views\\AgendarTutoriaPage.xaml",
+              "RelativeToolTip": "Taller 3\\Views\\AgendarTutoriaPage.xaml",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAFUAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-26T07:41:10.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AgendarTutoriaViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\ViewModels\\AgendarTutoriaViewModel.cs",
+              "RelativeDocumentMoniker": "Taller 3\\ViewModels\\AgendarTutoriaViewModel.cs",
+              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\ViewModels\\AgendarTutoriaViewModel.cs",
+              "RelativeToolTip": "Taller 3\\ViewModels\\AgendarTutoriaViewModel.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAADwv4cAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T03:13:20.741Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "HorariosDisponiblesViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\ViewModels\\HorariosDisponiblesViewModel.cs",
+              "RelativeDocumentMoniker": "Taller 3\\ViewModels\\HorariosDisponiblesViewModel.cs",
+              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\ViewModels\\HorariosDisponiblesViewModel.cs",
+              "RelativeToolTip": "Taller 3\\ViewModels\\HorariosDisponiblesViewModel.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAD4v1IAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T01:42:58.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DetalleTutoriaPage.xaml",
+              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Views\\DetalleTutoriaPage.xaml",
+              "RelativeDocumentMoniker": "Taller 3\\Views\\DetalleTutoriaPage.xaml",
+              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Views\\DetalleTutoriaPage.xaml",
+              "RelativeToolTip": "Taller 3\\Views\\DetalleTutoriaPage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-24T13:53:53.631Z"
+              "WhenOpened": "2025-11-26T05:28:11.73Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Maestro.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Maestro.xaml.cs",
-              "RelativeDocumentMoniker": "Taller 3\\Maestro.xaml.cs",
-              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Maestro.xaml.cs",
-              "RelativeToolTip": "Taller 3\\Maestro.xaml.cs",
+              "DocumentIndex": 16,
+              "Title": "AgregarEstudiantesViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\ViewModels\\AgregarEstudiantesViewModel.cs",
+              "RelativeDocumentMoniker": "Taller 3\\ViewModels\\AgregarEstudiantesViewModel.cs",
+              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\ViewModels\\AgregarEstudiantesViewModel.cs",
+              "RelativeToolTip": "Taller 3\\ViewModels\\AgregarEstudiantesViewModel.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAAwI0AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T03:13:35.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DetalleTutoriaPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Views\\DetalleTutoriaPage.xaml.cs",
+              "RelativeDocumentMoniker": "Taller 3\\Views\\DetalleTutoriaPage.xaml.cs",
+              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Views\\DetalleTutoriaPage.xaml.cs",
+              "RelativeToolTip": "Taller 3\\Views\\DetalleTutoriaPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T05:28:14.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "HorariosDisponiblesPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Views\\HorariosDisponiblesPage.xaml.cs",
+              "RelativeDocumentMoniker": "Taller 3\\Views\\HorariosDisponiblesPage.xaml.cs",
+              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Views\\HorariosDisponiblesPage.xaml.cs",
+              "RelativeToolTip": "Taller 3\\Views\\HorariosDisponiblesPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T04:45:23.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\ViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "Taller 3\\ViewModels\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\ViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "Taller 3\\ViewModels\\LoginViewModel.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T05:32:06.203Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "LoginPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Views\\LoginPage.xaml.cs",
+              "RelativeDocumentMoniker": "Taller 3\\Views\\LoginPage.xaml.cs",
+              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Views\\LoginPage.xaml.cs",
+              "RelativeToolTip": "Taller 3\\Views\\LoginPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T17:54:54.548Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Taller 3\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Services\\AuthService.cs",
+              "RelativeToolTip": "Taller 3\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBIAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T03:11:29.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "NavigationService.cs",
+              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Services\\NavigationService.cs",
+              "RelativeDocumentMoniker": "Taller 3\\Services\\NavigationService.cs",
+              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Services\\NavigationService.cs",
+              "RelativeToolTip": "Taller 3\\Services\\NavigationService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T13:53:51.985Z"
+              "WhenOpened": "2025-11-26T01:28:16.942Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 24,
+              "Title": "LoginPage.xaml",
+              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Views\\LoginPage.xaml",
+              "RelativeDocumentMoniker": "Taller 3\\Views\\LoginPage.xaml",
+              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Views\\LoginPage.xaml",
+              "RelativeToolTip": "Taller 3\\Views\\LoginPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-25T17:55:00.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
               "Title": "Detalle.xaml.cs",
               "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Detalle.xaml.cs",
               "RelativeDocumentMoniker": "Taller 3\\Detalle.xaml.cs",
@@ -206,7 +558,187 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 25,
+              "Title": "Maestro.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Maestro.xaml.cs",
+              "RelativeDocumentMoniker": "Taller 3\\Maestro.xaml.cs",
+              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Maestro.xaml.cs",
+              "RelativeToolTip": "Taller 3\\Maestro.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T13:53:51.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "DetalleTutoriaFinalizadaPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Views\\DetalleTutoriaFinalizadaPage.xaml.cs",
+              "RelativeDocumentMoniker": "Taller 3\\Views\\DetalleTutoriaFinalizadaPage.xaml.cs",
+              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Views\\DetalleTutoriaFinalizadaPage.xaml.cs",
+              "RelativeToolTip": "Taller 3\\Views\\DetalleTutoriaFinalizadaPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T17:55:21.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "TutoriaCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Models\\TutoriaCreateDto.cs",
+              "RelativeDocumentMoniker": "Taller 3\\Models\\TutoriaCreateDto.cs",
+              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Models\\TutoriaCreateDto.cs",
+              "RelativeToolTip": "Taller 3\\Models\\TutoriaCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T21:03:11.836Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "TutoriaResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Models\\TutoriaResponseDto.cs",
+              "RelativeDocumentMoniker": "Taller 3\\Models\\TutoriaResponseDto.cs",
+              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Models\\TutoriaResponseDto.cs",
+              "RelativeToolTip": "Taller 3\\Models\\TutoriaResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T21:03:14.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "MisTutoriasViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\ViewModels\\MisTutoriasViewModel.cs",
+              "RelativeDocumentMoniker": "Taller 3\\ViewModels\\MisTutoriasViewModel.cs",
+              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\ViewModels\\MisTutoriasViewModel.cs",
+              "RelativeToolTip": "Taller 3\\ViewModels\\MisTutoriasViewModel.cs",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T21:18:56.184Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "UsuarioResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Models\\UsuarioResponseDto.cs",
+              "RelativeDocumentMoniker": "Taller 3\\Models\\UsuarioResponseDto.cs",
+              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Models\\UsuarioResponseDto.cs",
+              "RelativeToolTip": "Taller 3\\Models\\UsuarioResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T23:13:46.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "AgregarEstudiantesTutoriaDto.cs",
+              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Models\\AgregarEstudiantesTutoriaDto.cs",
+              "RelativeDocumentMoniker": "Taller 3\\Models\\AgregarEstudiantesTutoriaDto.cs",
+              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Models\\AgregarEstudiantesTutoriaDto.cs",
+              "RelativeToolTip": "Taller 3\\Models\\AgregarEstudiantesTutoriaDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T21:02:58.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "HorarioResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Models\\HorarioResponseDto.cs",
+              "RelativeDocumentMoniker": "Taller 3\\Models\\HorarioResponseDto.cs",
+              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Models\\HorarioResponseDto.cs",
+              "RelativeToolTip": "Taller 3\\Models\\HorarioResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T21:03:01.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "DetalleTutoriaTutorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\ViewModels\\DetalleTutoriaTutorViewModel.cs",
+              "RelativeDocumentMoniker": "Taller 3\\ViewModels\\DetalleTutoriaTutorViewModel.cs",
+              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\ViewModels\\DetalleTutoriaTutorViewModel.cs",
+              "RelativeToolTip": "Taller 3\\ViewModels\\DetalleTutoriaTutorViewModel.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T21:17:16.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "DetalleTutoriaViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\ViewModels\\DetalleTutoriaViewModel.cs",
+              "RelativeDocumentMoniker": "Taller 3\\ViewModels\\DetalleTutoriaViewModel.cs",
+              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\ViewModels\\DetalleTutoriaViewModel.cs",
+              "RelativeToolTip": "Taller 3\\ViewModels\\DetalleTutoriaViewModel.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T21:17:41.132Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "DocenteHomeViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\ViewModels\\DocenteHomeViewModel.cs",
+              "RelativeDocumentMoniker": "Taller 3\\ViewModels\\DocenteHomeViewModel.cs",
+              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\ViewModels\\DocenteHomeViewModel.cs",
+              "RelativeToolTip": "Taller 3\\ViewModels\\DocenteHomeViewModel.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T21:18:40.606Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "CambioTutoriaDto.txt",
+              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\DTOSAPI\\CambioTutoriaDto.txt",
+              "RelativeDocumentMoniker": "Taller 3\\DTOSAPI\\CambioTutoriaDto.txt",
+              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\DTOSAPI\\CambioTutoriaDto.txt",
+              "RelativeToolTip": "Taller 3\\DTOSAPI\\CambioTutoriaDto.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-11-24T21:02:51.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Principal.xaml",
+              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Principal.xaml",
+              "RelativeDocumentMoniker": "Taller 3\\Principal.xaml",
+              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Principal.xaml",
+              "RelativeToolTip": "Taller 3\\Principal.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-24T13:54:05.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "Taller 3\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\MainPage.xaml.cs",
+              "RelativeToolTip": "Taller 3\\MainPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T13:53:57.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Maestro.xaml",
+              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Maestro.xaml",
+              "RelativeDocumentMoniker": "Taller 3\\Maestro.xaml",
+              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Maestro.xaml",
+              "RelativeToolTip": "Taller 3\\Maestro.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-24T13:53:53.631Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
               "Title": "Detalle.xaml",
               "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Detalle.xaml",
               "RelativeDocumentMoniker": "Taller 3\\Detalle.xaml",
@@ -218,92 +750,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AgregarEstudiantesPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Views\\AgregarEstudiantesPage.xaml.cs",
-              "RelativeDocumentMoniker": "Taller 3\\Views\\AgregarEstudiantesPage.xaml.cs",
-              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Views\\AgregarEstudiantesPage.xaml.cs",
-              "RelativeToolTip": "Taller 3\\Views\\AgregarEstudiantesPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T03:13:55.07Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AgendarTutoriaPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Views\\AgendarTutoriaPage.xaml.cs",
-              "RelativeDocumentMoniker": "Taller 3\\Views\\AgendarTutoriaPage.xaml.cs",
-              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Views\\AgendarTutoriaPage.xaml.cs",
-              "RelativeToolTip": "Taller 3\\Views\\AgendarTutoriaPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T03:12:16.792Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ApiService.cs",
-              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Services\\ApiService.cs",
-              "RelativeDocumentMoniker": "Taller 3\\Services\\ApiService.cs",
-              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Services\\ApiService.cs",
-              "RelativeToolTip": "Taller 3\\Services\\ApiService.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-22T07:46:03.362Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AgendarTutoriaViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\ViewModels\\AgendarTutoriaViewModel.cs",
-              "RelativeDocumentMoniker": "Taller 3\\ViewModels\\AgendarTutoriaViewModel.cs",
-              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\ViewModels\\AgendarTutoriaViewModel.cs",
-              "RelativeToolTip": "Taller 3\\ViewModels\\AgendarTutoriaViewModel.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T03:13:20.741Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MauiProgram.cs",
-              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\MauiProgram.cs",
-              "RelativeDocumentMoniker": "Taller 3\\MauiProgram.cs",
-              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\MauiProgram.cs",
-              "RelativeToolTip": "Taller 3\\MauiProgram.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAqwB8AAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-20T23:36:39.356Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AgregarEstudiantesViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\ViewModels\\AgregarEstudiantesViewModel.cs",
-              "RelativeDocumentMoniker": "Taller 3\\ViewModels\\AgregarEstudiantesViewModel.cs",
-              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\ViewModels\\AgregarEstudiantesViewModel.cs",
-              "RelativeToolTip": "Taller 3\\ViewModels\\AgregarEstudiantesViewModel.cs",
-              "ViewState": "AgIAAHkAAAAAAAAAAAAUwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T03:13:35.574Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "Taller 3\\Services\\AuthService.cs",
-              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Services\\AuthService.cs",
-              "RelativeToolTip": "Taller 3\\Services\\AuthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T03:11:29.787Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 44,
               "Title": "appicon.svg",
               "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Resources\\AppIcon\\appicon.svg",
               "RelativeDocumentMoniker": "Taller 3\\Resources\\AppIcon\\appicon.svg",
@@ -315,7 +762,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 53,
               "Title": "PersonajesPage.xaml",
               "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\PersonajesPage.xaml",
               "RelativeDocumentMoniker": "Taller 3\\PersonajesPage.xaml",
@@ -326,7 +773,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 43,
               "Title": "AppShell.xaml.cs",
               "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\AppShell.xaml.cs",
               "RelativeDocumentMoniker": "Taller 3\\AppShell.xaml.cs",
@@ -338,7 +785,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 42,
               "Title": "AppShell.xaml",
               "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\AppShell.xaml",
               "RelativeDocumentMoniker": "Taller 3\\AppShell.xaml",
@@ -350,7 +797,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 52,
               "Title": "PersonajesPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\PersonajesPage.xaml.cs",
               "RelativeDocumentMoniker": "Taller 3\\PersonajesPage.xaml.cs",
@@ -361,7 +808,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 45,
               "Title": "DetalleTutoriaTutorPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Views\\DetalleTutoriaTutorPage.xaml.cs",
               "RelativeDocumentMoniker": "Taller 3\\Views\\DetalleTutoriaTutorPage.xaml.cs",
@@ -373,7 +820,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 47,
               "Title": "TutoriasFinalizadasTutorPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Views\\TutoriasFinalizadasTutorPage.xaml.cs",
               "RelativeDocumentMoniker": "Taller 3\\Views\\TutoriasFinalizadasTutorPage.xaml.cs",
@@ -385,7 +832,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 46,
               "Title": "MisTutoriasTutorPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Views\\MisTutoriasTutorPage.xaml.cs",
               "RelativeDocumentMoniker": "Taller 3\\Views\\MisTutoriasTutorPage.xaml.cs",
@@ -397,7 +844,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 48,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\App.xaml",
               "RelativeDocumentMoniker": "Taller 3\\App.xaml",
@@ -409,7 +856,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 50,
               "Title": "CommonPage.xaml",
               "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\CommonPage.xaml",
               "RelativeDocumentMoniker": "Taller 3\\CommonPage.xaml",
@@ -420,7 +867,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 49,
               "Title": "Campeon.cs",
               "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Campeon.cs",
               "RelativeDocumentMoniker": "Taller 3\\Campeon.cs",
@@ -431,7 +878,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 51,
               "Title": "CommonPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\CommonPage.xaml.cs",
               "RelativeDocumentMoniker": "Taller 3\\CommonPage.xaml.cs",
@@ -442,19 +889,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\App.xaml.cs",
-              "RelativeDocumentMoniker": "Taller 3\\App.xaml.cs",
-              "ToolTip": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\App.xaml.cs",
-              "RelativeToolTip": "Taller 3\\App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-20T23:12:34.373Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 54,
               "Title": "Personaje.cs",
               "DocumentMoniker": "C:\\Users\\molin\\Desktop\\Taller 3 MAUI\\Taller 3\\Taller 3\\Personaje.cs",
               "RelativeDocumentMoniker": "Taller 3\\Personaje.cs",

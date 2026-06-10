@@ -2,96 +2,435 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewmodels="clr-namespace:Taller_3.ViewModels"
+             xmlns:models="clr-namespace:Taller_3.Models"
              x:Class="Taller_3.Views.AgendarTutoriaPage"
              x:DataType="viewmodels:AgendarTutoriaViewModel"
-             Title="Agendar Tutoría"
-             BackgroundColor="#E8F5E9">
-    
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Volver" 
-                     Command="{Binding Source={RelativeSource AncestorType={x:Type NavigationPage}}, Path=BackButtonCommand}"/>
-    </ContentPage.ToolbarItems>
+             BackgroundColor="White"
+             Shell.NavBarIsVisible="False"
+             NavigationPage.HasNavigationBar="False">
 
-    <ScrollView>
-        <VerticalStackLayout Padding="20" Spacing="20">
-            <!-- Banner verde -->
-            <VerticalStackLayout BackgroundColor="#2E7D32" 
-                                 Padding="20" 
-                                 Spacing="5"
-                                 Margin="0,0,0,20">
-                <Label Text="Agendar Tutoría" 
-                       FontSize="24" 
-                       FontAttributes="Bold" 
-                       TextColor="White"/>
-                <Label Text="Reserva un horario disponible para una nueva tutoría" 
-                       FontSize="14" 
-                       TextColor="White"/>
-            </VerticalStackLayout>
+    <Grid RowDefinitions="Auto,*,Auto">
 
-            <!-- Formulario -->
-            <Border StrokeThickness="0" 
-                    BackgroundColor="White" 
-                    Padding="20" 
-                    StrokeShape="RoundRectangle 10,10,10,10">
-                <VerticalStackLayout Spacing="20">
-                    <Label Text="Idioma" 
-                           FontSize="14" 
-                           TextColor="#424242" 
-                           FontAttributes="Bold"/>
-                    <Entry Text="{Binding Idioma}" 
-                           Placeholder="Ej: Inglés" 
-                           TextColor="#424242"/>
-                    
-                    <Label Text="Nivel" 
-                           FontSize="14" 
-                           TextColor="#424242" 
-                           FontAttributes="Bold"/>
-                    <Entry Text="{Binding Nivel}" 
-                           Placeholder="Ej: A1" 
-                           TextColor="#424242"/>
-                    
-                    <Label Text="Tema" 
-                           FontSize="14" 
-                           TextColor="#424242" 
-                           FontAttributes="Bold"/>
-                    <Entry Text="{Binding Tema}" 
-                           Placeholder="Ej: Gramática básica" 
-                           TextColor="#424242"/>
-                    
-                    <Label Text="Modalidad" 
-                           FontSize="14" 
-                           TextColor="#424242" 
-                           FontAttributes="Bold"/>
-                    <Picker ItemsSource="{Binding Modalidades}" 
-                            SelectedItem="{Binding Modalidad}">
-                        <Picker.ItemsSource>
-                            <x:Array Type="{x:Type x:String}">
-                                <x:String>Presencial</x:String>
-                                <x:String>Virtual</x:String>
-                            </x:Array>
-                        </Picker.ItemsSource>
-                    </Picker>
+        <!-- Header morado con stepper -->
+        <VerticalStackLayout Grid.Row="0"
+                             BackgroundColor="#4a3fa8"
+                             Padding="20,16,20,20"
+                             Spacing="16">
+            <Grid ColumnDefinitions="*,Auto">
+                <Label Grid.Column="0"
+                       Text="Agendar Tutoría"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       TextColor="White"
+                       VerticalOptions="Center"/>
+                <Button Grid.Column="1"
+                        Text="Cancelar"
+                        Command="{Binding CancelarCommand}"
+                        BackgroundColor="Transparent"
+                        TextColor="#FFFFFFCC"
+                        FontSize="14"
+                        Padding="8,4"
+                        BorderWidth="0"/>
+            </Grid>
 
-                    <Label Text="Tutor/Docente" 
-                           FontSize="14" 
-                           TextColor="#424242" 
-                           FontAttributes="Bold"/>
-                    <Picker ItemsSource="{Binding Tutores}" 
-                            SelectedItem="{Binding TutorSeleccionado}"
-                            ItemDisplayBinding="{Binding NombreConRol}">
-                    </Picker>
-
-                    <Button Text="Guardar" 
-                            Command="{Binding GuardarCommand}"
-                            BackgroundColor="#2E7D32" 
-                            TextColor="White" 
-                            FontSize="16" 
-                            FontAttributes="Bold"
-                            CornerRadius="10"
-                            Margin="0,20,0,0"
-                            IsEnabled="{Binding IsLoading, Converter={StaticResource InvertedBoolConverter}}"/>
+            <!-- Stepper -->
+            <Grid ColumnDefinitions="Auto,*,Auto,*,Auto" ColumnSpacing="0" VerticalOptions="Center">
+                <!-- Paso 1 -->
+                <VerticalStackLayout Grid.Column="0" Spacing="6" HorizontalOptions="Center">
+                    <Border WidthRequest="34"
+                            HeightRequest="34"
+                            Stroke="#FFFFFF55"
+                            StrokeThickness="1"
+                            StrokeShape="RoundRectangle 17">
+                        <Border.Triggers>
+                            <DataTrigger TargetType="Border" Binding="{Binding Paso1Activo}" Value="True">
+                                <Setter Property="BackgroundColor" Value="White"/>
+                                <Setter Property="Stroke" Value="White"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Border" Binding="{Binding Paso1Completado}" Value="True">
+                                <Setter Property="BackgroundColor" Value="#66FFFFFF"/>
+                                <Setter Property="Stroke" Value="#99FFFFFF"/>
+                            </DataTrigger>
+                        </Border.Triggers>
+                        <Label Text="1"
+                               FontSize="14"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"
+                               TextColor="#FFFFFF88">
+                            <Label.Triggers>
+                                <DataTrigger TargetType="Label" Binding="{Binding Paso1Activo}" Value="True">
+                                    <Setter Property="TextColor" Value="#4a3fa8"/>
+                                </DataTrigger>
+                                <DataTrigger TargetType="Label" Binding="{Binding Paso1Completado}" Value="True">
+                                    <Setter Property="TextColor" Value="White"/>
+                                </DataTrigger>
+                            </Label.Triggers>
+                        </Label>
+                    </Border>
+                    <Label Text="Tema" FontSize="11" TextColor="White" HorizontalOptions="Center"/>
                 </VerticalStackLayout>
-            </Border>
+
+                <!-- Línea 1 -->
+                <BoxView Grid.Column="1"
+                         HeightRequest="2"
+                         VerticalOptions="Center"
+                         Margin="6,0"
+                         Color="#44FFFFFF">
+                    <BoxView.Triggers>
+                        <DataTrigger TargetType="BoxView" Binding="{Binding Linea1Activa}" Value="True">
+                            <Setter Property="Color" Value="White"/>
+                        </DataTrigger>
+                    </BoxView.Triggers>
+                </BoxView>
+
+                <!-- Paso 2 -->
+                <VerticalStackLayout Grid.Column="2" Spacing="6" HorizontalOptions="Center">
+                    <Border WidthRequest="34"
+                            HeightRequest="34"
+                            Stroke="#FFFFFF33"
+                            StrokeThickness="1"
+                            StrokeShape="RoundRectangle 17">
+                        <Border.Triggers>
+                            <DataTrigger TargetType="Border" Binding="{Binding Paso2Activo}" Value="True">
+                                <Setter Property="BackgroundColor" Value="White"/>
+                                <Setter Property="Stroke" Value="White"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Border" Binding="{Binding Paso2Completado}" Value="True">
+                                <Setter Property="BackgroundColor" Value="#66FFFFFF"/>
+                                <Setter Property="Stroke" Value="#99FFFFFF"/>
+                            </DataTrigger>
+                        </Border.Triggers>
+                        <Label Text="2"
+                               FontSize="14"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"
+                               TextColor="#FFFFFF88">
+                            <Label.Triggers>
+                                <DataTrigger TargetType="Label" Binding="{Binding Paso2Activo}" Value="True">
+                                    <Setter Property="TextColor" Value="#4a3fa8"/>
+                                </DataTrigger>
+                                <DataTrigger TargetType="Label" Binding="{Binding Paso2Completado}" Value="True">
+                                    <Setter Property="TextColor" Value="White"/>
+                                </DataTrigger>
+                            </Label.Triggers>
+                        </Label>
+                    </Border>
+                    <Label Text="Asign." FontSize="11" TextColor="White" HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+
+                <!-- Línea 2 -->
+                <BoxView Grid.Column="3"
+                         HeightRequest="2"
+                         VerticalOptions="Center"
+                         Margin="6,0"
+                         Color="#44FFFFFF">
+                    <BoxView.Triggers>
+                        <DataTrigger TargetType="BoxView" Binding="{Binding Linea2Activa}" Value="True">
+                            <Setter Property="Color" Value="White"/>
+                        </DataTrigger>
+                    </BoxView.Triggers>
+                </BoxView>
+
+                <!-- Paso 3 -->
+                <VerticalStackLayout Grid.Column="4" Spacing="6" HorizontalOptions="Center">
+                    <Border WidthRequest="34"
+                            HeightRequest="34"
+                            Stroke="#FFFFFF33"
+                            StrokeThickness="1"
+                            StrokeShape="RoundRectangle 17">
+                        <Border.Triggers>
+                            <DataTrigger TargetType="Border" Binding="{Binding Paso3Activo}" Value="True">
+                                <Setter Property="BackgroundColor" Value="White"/>
+                                <Setter Property="Stroke" Value="White"/>
+                            </DataTrigger>
+                        </Border.Triggers>
+                        <Label Text="3"
+                               FontSize="14"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"
+                               TextColor="#FFFFFF88">
+                            <Label.Triggers>
+                                <DataTrigger TargetType="Label" Binding="{Binding Paso3Activo}" Value="True">
+                                    <Setter Property="TextColor" Value="#4a3fa8"/>
+                                </DataTrigger>
+                            </Label.Triggers>
+                        </Label>
+                    </Border>
+                    <Label Text="Estud." FontSize="11" TextColor="White" HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+            </Grid>
         </VerticalStackLayout>
-    </ScrollView>
+
+        <!-- Contenido del paso activo -->
+        <ScrollView Grid.Row="1">
+            <VerticalStackLayout Padding="20,24" Spacing="20">
+
+                <Label Text="{Binding TituloPaso}"
+                       FontSize="22"
+                       FontAttributes="Bold"
+                       TextColor="#1A1A2E"/>
+
+                <!-- PASO 1: Tema -->
+                <VerticalStackLayout IsVisible="{Binding EsPaso1}" Spacing="16">
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="Idioma" FontSize="13" FontAttributes="Bold" TextColor="#424242"/>
+                        <Border Stroke="#E0E0E0" StrokeThickness="0.5" Padding="12,4" StrokeShape="RoundRectangle 8">
+                            <Entry Text="{Binding Idioma}"
+                                   Placeholder="Ej: Inglés"
+                                   TextColor="#424242"
+                                   BackgroundColor="Transparent"/>
+                        </Border>
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="Nivel" FontSize="13" FontAttributes="Bold" TextColor="#424242"/>
+                        <Border Stroke="#E0E0E0" StrokeThickness="0.5" Padding="12,4" StrokeShape="RoundRectangle 8">
+                            <Entry Text="{Binding Nivel}"
+                                   Placeholder="Ej: A1, B2, Avanzado…"
+                                   TextColor="#424242"
+                                   BackgroundColor="Transparent"/>
+                        </Border>
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="Tema" FontSize="13" FontAttributes="Bold" TextColor="#424242"/>
+                        <Border Stroke="#E0E0E0" StrokeThickness="0.5" Padding="12,4" StrokeShape="RoundRectangle 8">
+                            <Entry Text="{Binding Tema}"
+                                   Placeholder="Ej: Gramática básica"
+                                   TextColor="#424242"
+                                   BackgroundColor="Transparent"/>
+                        </Border>
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="Modalidad" FontSize="13" FontAttributes="Bold" TextColor="#424242"/>
+                        <FlexLayout Wrap="Wrap"
+                                    BindableLayout.ItemsSource="{Binding ModalidadesChips}"
+                                    JustifyContent="Start"
+                                    AlignItems="Start">
+                            <BindableLayout.ItemTemplate>
+                                <DataTemplate x:DataType="models:ModalidadChipItem">
+                                    <Button Text="{Binding Nombre}"
+                                            Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:AgendarTutoriaViewModel}}, Path=ToggleModalidadCommand}"
+                                            CommandParameter="{Binding .}"
+                                            BackgroundColor="Transparent"
+                                            TextColor="#424242"
+                                            BorderColor="#E0E0E0"
+                                            BorderWidth="1"
+                                            CornerRadius="20"
+                                            Padding="16,8"
+                                            Margin="0,0,8,8"
+                                            FontSize="13">
+                                        <Button.Triggers>
+                                            <DataTrigger TargetType="Button" Binding="{Binding IsSeleccionado}" Value="True">
+                                                <Setter Property="BackgroundColor" Value="#eeedfe"/>
+                                                <Setter Property="TextColor" Value="#3c3489"/>
+                                                <Setter Property="BorderColor" Value="#3c3489"/>
+                                            </DataTrigger>
+                                        </Button.Triggers>
+                                    </Button>
+                                </DataTemplate>
+                            </BindableLayout.ItemTemplate>
+                        </FlexLayout>
+                    </VerticalStackLayout>
+                </VerticalStackLayout>
+
+                <!-- PASO 2: Asignación -->
+                <VerticalStackLayout IsVisible="{Binding EsPaso2}" Spacing="16">
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="Tutor / Docente" FontSize="13" FontAttributes="Bold" TextColor="#424242"/>
+                        <Border Stroke="#E0E0E0" StrokeThickness="0.5" Padding="12,0" StrokeShape="RoundRectangle 8">
+                            <Grid ColumnDefinitions="*,Auto" ColumnSpacing="8">
+                                <Picker Grid.Column="0"
+                                        ItemsSource="{Binding Tutores}"
+                                        SelectedItem="{Binding TutorSeleccionado}"
+                                        ItemDisplayBinding="{Binding NombreConRol}"
+                                        Title="Seleccionar tutor o docente"
+                                        TextColor="#424242"/>
+                                <Label Grid.Column="1"
+                                       Text="⌄"
+                                       FontSize="18"
+                                       TextColor="#757575"
+                                       VerticalOptions="Center"/>
+                            </Grid>
+                        </Border>
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="Fecha" FontSize="13" FontAttributes="Bold" TextColor="#424242"/>
+                        <Border Stroke="#E0E0E0"
+                                StrokeThickness="0.5"
+                                BackgroundColor="#F5F5F5"
+                                Padding="12,10"
+                                StrokeShape="RoundRectangle 8">
+                            <Label Text="{Binding FechaTexto}"
+                                   FontSize="14"
+                                   TextColor="#616161"/>
+                        </Border>
+                        <Label Text="Definida por el horario seleccionado"
+                               FontSize="11"
+                               TextColor="#9E9E9E"/>
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="Hora" FontSize="13" FontAttributes="Bold" TextColor="#424242"/>
+                        <Border Stroke="#E0E0E0"
+                                StrokeThickness="0.5"
+                                BackgroundColor="#F5F5F5"
+                                Padding="12,10"
+                                StrokeShape="RoundRectangle 8">
+                            <Label Text="{Binding HoraTexto}"
+                                   FontSize="14"
+                                   TextColor="#616161"/>
+                        </Border>
+                        <Label Text="Definida por el horario seleccionado"
+                               FontSize="11"
+                               TextColor="#9E9E9E"/>
+                    </VerticalStackLayout>
+                </VerticalStackLayout>
+
+                <!-- PASO 3: Estudiantes -->
+                <VerticalStackLayout IsVisible="{Binding EsPaso3}" Spacing="16">
+                    <HorizontalStackLayout Spacing="10">
+                        <Label Text="Estudiantes"
+                               FontSize="16"
+                               FontAttributes="Bold"
+                               TextColor="#424242"
+                               VerticalOptions="Center"/>
+                        <Border BackgroundColor="#eeedfe"
+                                Stroke="#3c3489"
+                                StrokeThickness="1"
+                                Padding="10,4"
+                                StrokeShape="RoundRectangle 12">
+                            <Label Text="{Binding EstudiantesSeleccionadosTexto}"
+                                   FontSize="12"
+                                   FontAttributes="Bold"
+                                   TextColor="#3c3489"/>
+                        </Border>
+                    </HorizontalStackLayout>
+
+                    <Label Text="Seleccione hasta 5 estudiantes (opcional)"
+                           FontSize="13"
+                           TextColor="#757575"/>
+
+                    <Border Stroke="#E0E0E0"
+                            StrokeThickness="0.5"
+                            Padding="12,4"
+                            StrokeShape="RoundRectangle 8">
+                        <Entry Text="{Binding BusquedaEstudiante}"
+                               Placeholder="Buscar por nombre o correo..."
+                               TextColor="#424242"
+                               BackgroundColor="Transparent"/>
+                    </Border>
+
+                    <CollectionView ItemsSource="{Binding EstudiantesDisponibles}"
+                                    EmptyView="No se encontraron estudiantes.">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate x:DataType="viewmodels:EstudianteSeleccionable">
+                                <Border StrokeThickness="1"
+                                        Stroke="#E0E0E0"
+                                        BackgroundColor="White"
+                                        Padding="14"
+                                        Margin="0,0,0,10"
+                                        StrokeShape="RoundRectangle 10">
+                                    <Border.Triggers>
+                                        <DataTrigger TargetType="Border" Binding="{Binding IsSeleccionado}" Value="True">
+                                            <Setter Property="BackgroundColor" Value="#e1f5ee"/>
+                                            <Setter Property="Stroke" Value="#1d9e75"/>
+                                        </DataTrigger>
+                                    </Border.Triggers>
+
+                                    <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="12">
+                                        <Border WidthRequest="44"
+                                                HeightRequest="44"
+                                                BackgroundColor="#eeedfe"
+                                                Stroke="#D8D6F8"
+                                                StrokeThickness="1"
+                                                StrokeShape="RoundRectangle 22"
+                                                VerticalOptions="Center">
+                                            <Label Text="{Binding Iniciales}"
+                                                   FontSize="15"
+                                                   FontAttributes="Bold"
+                                                   TextColor="#3c3489"
+                                                   HorizontalOptions="Center"
+                                                   VerticalOptions="Center"/>
+                                        </Border>
+
+                                        <VerticalStackLayout Grid.Column="1" Spacing="2" VerticalOptions="Center">
+                                            <Label Text="{Binding Estudiante.NombreCompleto}"
+                                                   FontSize="15"
+                                                   FontAttributes="Bold"
+                                                   TextColor="#1A1A2E"/>
+                                            <Label Text="{Binding Estudiante.Correo}"
+                                                   FontSize="12"
+                                                   TextColor="#757575"/>
+                                        </VerticalStackLayout>
+
+                                        <Button Grid.Column="2"
+                                                Text="{Binding IconoSeleccion}"
+                                                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:AgendarTutoriaViewModel}}, Path=ToggleEstudianteCommand}"
+                                                CommandParameter="{Binding .}"
+                                                WidthRequest="40"
+                                                HeightRequest="40"
+                                                CornerRadius="20"
+                                                FontSize="18"
+                                                FontAttributes="Bold"
+                                                Padding="0"
+                                                BackgroundColor="#F5F5F5"
+                                                TextColor="#757575"
+                                                BorderColor="#E0E0E0"
+                                                BorderWidth="1"
+                                                VerticalOptions="Center">
+                                            <Button.Triggers>
+                                                <DataTrigger TargetType="Button" Binding="{Binding IsSeleccionado}" Value="True">
+                                                    <Setter Property="BackgroundColor" Value="#1d9e75"/>
+                                                    <Setter Property="TextColor" Value="White"/>
+                                                    <Setter Property="BorderColor" Value="#1d9e75"/>
+                                                </DataTrigger>
+                                            </Button.Triggers>
+                                        </Button>
+                                    </Grid>
+                                </Border>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </VerticalStackLayout>
+
+                <ActivityIndicator IsRunning="{Binding IsLoading}"
+                                   IsVisible="{Binding IsLoading}"
+                                   Color="#2d9e6a"
+                                   HorizontalOptions="Center"/>
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <!-- Navegación inferior -->
+        <VerticalStackLayout Grid.Row="2"
+                             Padding="20,12,20,20"
+                             Spacing="10"
+                             BackgroundColor="White">
+            <Button Text="{Binding TextoBotonPrincipal}"
+                    Command="{Binding ContinuarCommand}"
+                    BackgroundColor="#2d9e6a"
+                    TextColor="White"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    CornerRadius="10"
+                    HeightRequest="50"
+                    IsEnabled="{Binding IsLoading, Converter={StaticResource InvertedBoolConverter}}"/>
+
+            <Button Text="Atrás"
+                    Command="{Binding AtrasCommand}"
+                    IsVisible="{Binding MostrarBotonAtras}"
+                    BackgroundColor="Transparent"
+                    TextColor="#424242"
+                    BorderColor="#E0E0E0"
+                    BorderWidth="1"
+                    FontSize="15"
+                    CornerRadius="10"
+                    HeightRequest="46"/>
+        </VerticalStackLayout>
+    </Grid>
 </ContentPage>

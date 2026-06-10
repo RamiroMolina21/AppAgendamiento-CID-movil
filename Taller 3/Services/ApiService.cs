@@ -7,11 +7,10 @@ namespace Taller_3.Services
     public class ApiService
     {
         private readonly HttpClient _httpClient;
-        private const string ApiBaseUrl = "https://uninoculated-groved-marlena.ngrok-free.dev/api/";
-
+       
         public ApiService(IHttpClientFactory httpClientFactory)
         {
-            _httpClient = httpClientFactory.CreateClient("ApiClient");
+            _httpClient = httpClientFactory.CreateClient("ApiClient");// Configurado en MauiProgram.cs
         }
 
         // Auth endpoints
@@ -20,7 +19,7 @@ namespace Taller_3.Services
             var response = await _httpClient.PostAsJsonAsync("Auth/login", loginDto);
             response.EnsureSuccessStatusCode();
             var result = await response.Content.ReadFromJsonAsync<LoginResponse>();
-            return result?.usuario;
+            return result?.usuario; 
         }
 
         // Horario endpoints
@@ -86,6 +85,21 @@ namespace Taller_3.Services
         {
             var response = await _httpClient.PostAsJsonAsync("Retroalimentacion", retroalimentacionDto);
             return response.IsSuccessStatusCode;
+        }
+
+        // Encuesta endpoints
+        public async Task<bool> EnviarEncuestasAsync(int tutoriaId)
+        {
+            try
+            {
+                var response = await _httpClient.PostAsync($"Encuesta/enviar/{tutoriaId}", null);
+                return response.IsSuccessStatusCode;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error enviando encuestas: {ex.Message}");
+                return false;
+            }
         }
 
         // Usuario endpoints

@@ -11,6 +11,7 @@ namespace Taller_3.Views
         {
             InitializeComponent();
             BindingContext = viewModel;
+            NavigationPage.SetHasNavigationBar(this, false);
         }
 
         protected override async void OnAppearing()
@@ -18,10 +19,9 @@ namespace Taller_3.Views
             base.OnAppearing();
             if (BindingContext is AgendarTutoriaViewModel vm)
             {
-                // Cargar tutores
                 await vm.LoadTutores();
-                
-                // Cargar horario si está disponible
+                await vm.LoadEstudiantes();
+
                 if (!string.IsNullOrEmpty(HorarioId))
                 {
                     if (int.TryParse(HorarioId, out int horarioId))

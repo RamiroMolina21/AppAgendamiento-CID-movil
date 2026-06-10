@@ -15,7 +15,6 @@
 
     <ScrollView>
         <VerticalStackLayout Spacing="0">
-            <!-- Banner verde -->
             <VerticalStackLayout BackgroundColor="#2E7D32" 
                                  Padding="20" 
                                  Spacing="5">
@@ -28,9 +27,7 @@
                        TextColor="White"/>
             </VerticalStackLayout>
 
-            <!-- Contenido principal -->
             <VerticalStackLayout Padding="20" Spacing="20">
-                <!-- Sección Horarios Disponibles -->
                 <VerticalStackLayout Spacing="15">
                     <HorizontalStackLayout Spacing="10">
                         <Image Source="calendar.png" 
@@ -40,7 +37,7 @@
                                FontSize="18" 
                                FontAttributes="Bold" 
                                TextColor="Black"/>
-                        <Label Text="{Binding HorariosCount}" 
+                        <Label Text="{Binding ContadorTexto}" 
                                FontSize="18" 
                                FontAttributes="Bold" 
                                TextColor="Red"/>
@@ -50,17 +47,22 @@
                         <Entry Text="{Binding SearchText}" 
                                Placeholder="Buscar..." 
                                BackgroundColor="White"
-                               WidthRequest="200"/>
+                               HorizontalOptions="FillAndExpand"/>
                         <Label Text="{Binding FechaActual, StringFormat='{0:dd/MM/yyyy}'}" 
                                FontSize="14" 
                                TextColor="Black"
                                VerticalOptions="Center"/>
                     </HorizontalStackLayout>
 
-                    <CollectionView ItemsSource="{Binding Horarios}" 
+                    <ActivityIndicator IsRunning="{Binding IsLoading}"
+                                       IsVisible="{Binding IsLoading}"
+                                       Color="#2E7D32"
+                                       HorizontalOptions="Center"/>
+
+                    <CollectionView ItemsSource="{Binding GruposHorarios}" 
                                     EmptyView="No hay horarios disponibles.">
                         <CollectionView.ItemTemplate>
-                            <DataTemplate x:DataType="models:HorarioResponseDto">
+                            <DataTemplate x:DataType="models:HorarioGrupoItem">
                                 <Border StrokeThickness="1" 
                                         Stroke="#E0E0E0" 
                                         BackgroundColor="White" 
@@ -68,22 +70,90 @@
                                         Margin="0,0,0,10"
                                         StrokeShape="RoundRectangle 5,5,5,5">
                                     <VerticalStackLayout Spacing="10">
-                                        <Label Text="{Binding Titulo}" 
-                                               FontSize="16" 
-                                               FontAttributes="Bold" 
-                                               TextColor="Black"/>
-                                        <Label Text="{Binding FechaInicio, StringFormat='Fecha: {0:dd/MM/yyyy}'}" 
-                                               FontSize="14" 
-                                               TextColor="#757575"/>
-                                        <Label Text="{Binding HoraInicio, StringFormat='Hora: {0:HH:mm}'} - {Binding HoraFin, StringFormat='{0:HH:mm}'}" 
+                                        <HorizontalStackLayout Spacing="8">
+                                            <Label Text="{Binding Titulo}" 
+                                                   FontSize="16" 
+                                                   FontAttributes="Bold" 
+                                                   TextColor="Black"
+                                                   HorizontalOptions="FillAndExpand"/>
+                                            <Border IsVisible="{Binding EsRecurrente}"
+                                                    BackgroundColor="#E8F5E9"
+                                                    Stroke="#2E7D32"
+                                                    StrokeThickness="1"
+                                                    Padding="8,4"
+                                                    StrokeShape="RoundRectangle 8,8,8,8">
+                                                <Label Text="{Binding EtiquetaRecurrencia}"
+                                                       FontSize="11"
+                                                       TextColor="#2E7D32"/>
+                                            </Border>
+                                        </HorizontalStackLayout>
+
+                                        <Label Text="{Binding HorarioTexto, StringFormat='Hora: {0}'}" 
                                                FontSize="14" 
                                                TextColor="#757575"/>
                                         <Label Text="{Binding Espacio}" 
                                                FontSize="14" 
                                                TextColor="#757575"/>
-                                        <Button Text="Agendar Tutoría" 
-                                                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:HorariosDisponiblesViewModel}}, Path=AgendarTutoriaCommand}"
+
+                                        <Label IsVisible="{Binding EsRecurrente, Converter={StaticResource InvertedBoolConverter}}"
+                                               Text="{Binding RangoFechas, StringFormat='Fecha: {0}'}" 
+                                               FontSize="14" 
+                                               TextColor="#757575"/>
+
+                                        <Label IsVisible="{Binding EsRecurrente}"
+                                               Text="{Binding RangoFechas, StringFormat='Fechas: {0}'}" 
+                                               FontSize="14" 
+                                               TextColor="#757575"/>
+
+                                        <Button IsVisible="{Binding EsRecurrente}"
+                                                Text="{Binding TextoExpandir}"
+                                                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:HorariosDisponiblesViewModel}}, Path=ToggleExpandCommand}"
                                                 CommandParameter="{Binding .}"
+                                                BackgroundColor="#1B5E20"
+                                                TextColor="White"
+                                                CornerRadius="5"/>
+
+                                        <VerticalStackLayout IsVisible="{Binding IsExpanded}"
+                                                             BindableLayout.ItemsSource="{Binding Ocurrencias}"
+                                                             Spacing="8">
+                                            <BindableLayout.ItemTemplate>
+                                                <DataTemplate x:DataType="models:HorarioResponseDto">
+                                                    <Border Stroke="#E8F5E9"
+                                                            StrokeThickness="1"
+                                                            BackgroundColor="#F1F8E9"
+                                                            Padding="10"
+                                                            Margin="0,0,0,6"
+                                                            StrokeShape="RoundRectangle 4,4,4,4">
+                                                        <Grid ColumnDefinitions="*,Auto" ColumnSpacing="10">
+                                                            <VerticalStackLayout Grid.Column="0" Spacing="2">
+                                                                <Label Text="{Binding FechaInicio, StringFormat='{0:dddd dd/MM/yyyy}'}"
+                                                                       FontSize="13"
+                                                                       FontAttributes="Bold"
+                                                                       TextColor="#424242"/>
+                                                                <Label Text="{Binding HoraInicio, StringFormat='Hora: {0:HH:mm}'}"
+                                                                       FontSize="12"
+                                                                       TextColor="#757575"/>
+                                                            </VerticalStackLayout>
+                                                            <Button Grid.Column="1"
+                                                                    Text="Agendar"
+                                                                    FontSize="12"
+                                                                    Padding="12,6"
+                                                                    Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:HorariosDisponiblesViewModel}}, Path=AgendarTutoriaCommand}"
+                                                                    CommandParameter="{Binding .}"
+                                                                    BackgroundColor="#2E7D32"
+                                                                    TextColor="White"
+                                                                    CornerRadius="5"
+                                                                    VerticalOptions="Center"/>
+                                                        </Grid>
+                                                    </Border>
+                                                </DataTemplate>
+                                            </BindableLayout.ItemTemplate>
+                                        </VerticalStackLayout>
+
+                                        <Button IsVisible="{Binding EsRecurrente, Converter={StaticResource InvertedBoolConverter}}"
+                                                Text="Agendar Tutoría" 
+                                                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:HorariosDisponiblesViewModel}}, Path=AgendarTutoriaCommand}"
+                                                CommandParameter="{Binding PrimeraOcurrencia}"
                                                 BackgroundColor="#2E7D32" 
                                                 TextColor="White"
                                                 CornerRadius="5"/>

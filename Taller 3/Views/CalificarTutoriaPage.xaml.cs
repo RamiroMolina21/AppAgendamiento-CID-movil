@@ -13,7 +13,7 @@ namespace Taller_3.Views
             BindingContext = viewModel;
         }
 
-        protected override async void OnAppearing()
+        protected override async void OnAppearing()// Se llama cuando la página aparece en pantalla
         {
             base.OnAppearing();
             if (BindingContext is CalificarTutoriaViewModel vm && !string.IsNullOrEmpty(TutoriaId))

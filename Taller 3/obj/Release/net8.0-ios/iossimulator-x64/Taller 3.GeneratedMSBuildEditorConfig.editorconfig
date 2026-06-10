@@ -1,0 +1,151 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-ios
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Taller_3
+build_property.ProjectDir = C:\Users\molin\Desktop\Taller 3 MAUI\Taller 3\Taller 3\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/molin/Desktop/Taller 3 MAUI/Taller 3/Taller 3/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Taller_3.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/molin/Desktop/Taller 3 MAUI/Taller 3/Taller 3/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Taller_3.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/molin/Desktop/Taller 3 MAUI/Taller 3/Taller 3/Detalle.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Taller_3.Detalle.xaml
+build_metadata.AdditionalFiles.TargetPath = Detalle.xaml
+build_metadata.AdditionalFiles.RelativePath = Detalle.xaml
+
+[C:/Users/molin/Desktop/Taller 3 MAUI/Taller 3/Taller 3/Maestro.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Taller_3.Maestro.xaml
+build_metadata.AdditionalFiles.TargetPath = Maestro.xaml
+build_metadata.AdditionalFiles.RelativePath = Maestro.xaml
+
+[C:/Users/molin/Desktop/Taller 3 MAUI/Taller 3/Taller 3/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Taller_3.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/molin/Desktop/Taller 3 MAUI/Taller 3/Taller 3/Principal.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Taller_3.Principal.xaml
+build_metadata.AdditionalFiles.TargetPath = Principal.xaml
+build_metadata.AdditionalFiles.RelativePath = Principal.xaml
+
+[C:/Users/molin/Desktop/Taller 3 MAUI/Taller 3/Taller 3/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Taller_3.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/molin/Desktop/Taller 3 MAUI/Taller 3/Taller 3/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Taller_3.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/molin/Desktop/Taller 3 MAUI/Taller 3/Taller 3/Views/AgendarTutoriaPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Taller_3.Views.AgendarTutoriaPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AgendarTutoriaPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AgendarTutoriaPage.xaml
+
+[C:/Users/molin/Desktop/Taller 3 MAUI/Taller 3/Taller 3/Views/AgregarEstudiantesPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Taller_3.Views.AgregarEstudiantesPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AgregarEstudiantesPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AgregarEstudiantesPage.xaml
+
+[C:/Users/molin/Desktop/Taller 3 MAUI/Taller 3/Taller 3/Views/CalificarTutoriaPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Taller_3.Views.CalificarTutoriaPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\CalificarTutoriaPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\CalificarTutoriaPage.xaml
+
+[C:/Users/molin/Desktop/Taller 3 MAUI/Taller 3/Taller 3/Views/DetalleTutoriaFinalizadaPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Taller_3.Views.DetalleTutoriaFinalizadaPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\DetalleTutoriaFinalizadaPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\DetalleTutoriaFinalizadaPage.xaml
+
+[C:/Users/molin/Desktop/Taller 3 MAUI/Taller 3/Taller 3/Views/DetalleTutoriaPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Taller_3.Views.DetalleTutoriaPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\DetalleTutoriaPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\DetalleTutoriaPage.xaml
+
+[C:/Users/molin/Desktop/Taller 3 MAUI/Taller 3/Taller 3/Views/DetalleTutoriaTutorPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Taller_3.Views.DetalleTutoriaTutorPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\DetalleTutoriaTutorPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\DetalleTutoriaTutorPage.xaml
+
+[C:/Users/molin/Desktop/Taller 3 MAUI/Taller 3/Taller 3/Views/DocenteHomePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Taller_3.Views.DocenteHomePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\DocenteHomePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\DocenteHomePage.xaml
+
+[C:/Users/molin/Desktop/Taller 3 MAUI/Taller 3/Taller 3/Views/HorariosDisponiblesPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Taller_3.Views.HorariosDisponiblesPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\HorariosDisponiblesPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\HorariosDisponiblesPage.xaml
+
+[C:/Users/molin/Desktop/Taller 3 MAUI/Taller 3/Taller 3/Views/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Taller_3.Views.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\LoginPage.xaml
+
+[C:/Users/molin/Desktop/Taller 3 MAUI/Taller 3/Taller 3/Views/MisTutoriasPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Taller_3.Views.MisTutoriasPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\MisTutoriasPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\MisTutoriasPage.xaml
+
+[C:/Users/molin/Desktop/Taller 3 MAUI/Taller 3/Taller 3/Views/MisTutoriasTutorPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Taller_3.Views.MisTutoriasTutorPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\MisTutoriasTutorPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\MisTutoriasTutorPage.xaml
+
+[C:/Users/molin/Desktop/Taller 3 MAUI/Taller 3/Taller 3/Views/TutorHomePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Taller_3.Views.TutorHomePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\TutorHomePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\TutorHomePage.xaml
+
+[C:/Users/molin/Desktop/Taller 3 MAUI/Taller 3/Taller 3/Views/TutoriasFinalizadasPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Taller_3.Views.TutoriasFinalizadasPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\TutoriasFinalizadasPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\TutoriasFinalizadasPage.xaml
+
+[C:/Users/molin/Desktop/Taller 3 MAUI/Taller 3/Taller 3/Views/TutoriasFinalizadasTutorPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Taller_3.Views.TutoriasFinalizadasTutorPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\TutoriasFinalizadasTutorPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\TutoriasFinalizadasTutorPage.xaml
